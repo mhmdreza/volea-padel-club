@@ -1,0 +1,419 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant data-open (&[data-state="open"]);
+@custom-variant data-closed (&[data-state="closed"]);
+
+:root {
+  /*
+   * Primitive tokens: the brand palette: one orange, then anthracite / matte black
+   * steel / warm concrete / natural oak.
+   * Nothing outside this block should reference these hex values directly.
+   */
+  --color-volea-500: #f9943b;
+  --color-volea-600: #e0782a;
+  --color-ink-950: #141414;
+  --color-anthracite-900: #2b2b2b;
+  --color-anthracite-800: #3a3a38;
+  --color-concrete-400: #a8a39c;
+  --color-concrete-100: #d9d6d0;
+  --color-concrete-50: #ebe7e0;
+  --color-oak-500: #b8875a;
+  --color-oak-200: #d8bc96;
+  --color-oak-50: #efe4d4;
+  --color-bone-50: #f4f1ec;
+
+  /* Dark-mode surfaces: navy rather than flat neutral black/gray, for a less
+   * plain, more premium dark theme — same "steel and glass" direction, cooler cast. */
+  --color-navy-950: #0b0f17;
+  --color-navy-900: #141b27;
+  --color-navy-850: #18202e;
+  --color-navy-800: #202a3a;
+  --color-slate-400: #8b96ab;
+
+  /* Low-iron glass tints for the court drawings (cool cast, like real panoramic
+   * glass): the pale one glows on the night court, the deeper one reads on bone. */
+  --color-glass-200: #cfe0e2;
+  --color-glass-500: #5f8a91;
+  --color-floodlight-50: #fff6e8;
+  /* Warm lamp glow for the day-session court: white light vanishes on bone. */
+  --color-lamp-400: #e3a23a;
+
+  /* Semantic tokens: components only ever use these, never the primitives above. */
+  --background: var(--color-bone-50);
+  --foreground: var(--color-ink-950);
+  --muted: var(--color-concrete-100);
+  --muted-foreground: var(--color-anthracite-800);
+  --primary: var(--color-volea-500);
+  --primary-hover: var(--color-volea-600);
+  --primary-foreground: var(--color-ink-950);
+  --secondary: var(--color-concrete-100);
+  --secondary-foreground: var(--color-ink-950);
+  --accent: var(--color-oak-500);
+  --accent-foreground: var(--color-bone-50);
+  --card: #ffffff;
+  --card-foreground: var(--color-ink-950);
+  --popover: #ffffff;
+  --popover-foreground: var(--color-ink-950);
+  --border: var(--color-concrete-100);
+  --input: var(--color-concrete-100);
+  --ring: var(--color-volea-500);
+  --destructive: #c0392b;
+  --destructive-foreground: #ffffff;
+  --success: #2e7d32;
+  --success-foreground: #ffffff;
+  --scene-glass: var(--color-glass-500);
+  --scene-light: var(--color-lamp-400);
+  /* Racket carbon: the same deep black in both themes, it's a material, not a surface. */
+  --scene-carbon: var(--color-ink-950);
+  /* Homepage stack: each part is a slab of its own material sliding over the last
+   * (concrete, then oak "drawing paper", then the plain base). */
+  --section-slab: var(--color-concrete-50);
+  --section-sheet: var(--color-oak-50);
+  --section-base: var(--color-bone-50);
+  --stack-scrim: color-mix(in srgb, var(--color-ink-950) 18%, transparent);
+  --stack-shadow: 0 -10px 30px -12px color-mix(in srgb, var(--color-ink-950) 22%, transparent);
+}
+
+.dark {
+  --background: var(--color-navy-950);
+  --foreground: var(--color-bone-50);
+  --muted: var(--color-navy-900);
+  --muted-foreground: var(--color-slate-400);
+  --primary: var(--color-volea-500);
+  --primary-hover: var(--color-volea-600);
+  --primary-foreground: var(--color-ink-950);
+  --secondary: var(--color-navy-800);
+  --secondary-foreground: var(--color-bone-50);
+  --accent: var(--color-oak-200);
+  --accent-foreground: var(--color-ink-950);
+  --card: var(--color-navy-900);
+  --card-foreground: var(--color-bone-50);
+  --popover: var(--color-navy-900);
+  --popover-foreground: var(--color-bone-50);
+  --border: var(--color-navy-800);
+  --input: var(--color-navy-800);
+  --ring: var(--color-volea-500);
+  --scene-glass: var(--color-glass-200);
+  --scene-light: var(--color-floodlight-50);
+  --scene-carbon: var(--color-ink-950);
+  --section-slab: var(--color-navy-900);
+  /* A step lighter than the facts slab, so the two cards don't merge at night. */
+  --section-sheet: var(--color-navy-800);
+  --section-base: var(--color-navy-950);
+  --stack-scrim: color-mix(in srgb, var(--color-ink-950) 50%, transparent);
+  --stack-shadow: 0 -10px 30px -12px color-mix(in srgb, var(--color-ink-950) 70%, transparent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-scene-glass: var(--scene-glass);
+  --color-scene-light: var(--scene-light);
+  --color-scene-carbon: var(--scene-carbon);
+  --color-section-slab: var(--section-slab);
+  --color-section-sheet: var(--section-sheet);
+  --color-section-base: var(--section-base);
+  --color-stack-scrim: var(--stack-scrim);
+  --shadow-stack: var(--stack-shadow);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-archivo);
+}
+
+@theme {
+  /* Small, architectural radii (steel-and-glass feel) rather than Tailwind's softer defaults. */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  /* The one exception: the homepage stack's slab edge, rounded so each card reads as
+     a sheet sliding over the last (smaller on phones). */
+  --radius-sheet-sm: 1rem;
+  --radius-sheet: 1.25rem;
+
+  /* Idle drift for the hero's floating logo dots. */
+  --animate-float: float 4s ease-in-out infinite;
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  /* Rally scoreboard: a changed digit rolls up out of the window and the new one
+     rolls in from below; the side that scored pops in orange. */
+  --animate-digit-in: digit-in 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-digit-out: digit-out 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-score-pop: score-pop 800ms ease-out;
+  @keyframes digit-in {
+    from {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes digit-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-80%);
+    }
+  }
+  @keyframes score-pop {
+    0% {
+      color: var(--color-primary);
+      transform: scale(1.35);
+    }
+    60% {
+      color: var(--color-primary);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Rally result: on a win the logo's dots burst out into a big halo of the logo
+     (offsets in --dx/--dy) over a swelling floodlight glow. */
+  --animate-burst: burst 1100ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-glow-in: glow-in 1200ms ease-out both;
+  @keyframes burst {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.3);
+    }
+    20% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+      transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1);
+    }
+  }
+  @keyframes glow-in {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.6);
+    }
+    to {
+      opacity: 0.55;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  /* /book: a chosen court's lines draw in (on elements with pathLength="1"). */
+  --animate-line-draw: line-draw 700ms ease-out both;
+  @keyframes line-draw {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* /book: the ball drops onto the chosen court, squashes, and settles. */
+  --animate-ball-drop: ball-drop 650ms ease-in both;
+  @keyframes ball-drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-48px);
+    }
+    15% {
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(0) scale(1.25, 0.7);
+      animation-timing-function: ease-out;
+    }
+    75% {
+      transform: translateY(-10px) scale(0.95, 1.05);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0) scale(1.1, 0.9);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* View transitions: no whole-page crossfade on navigation; only named elements
+   (the explore cards' morphs) move. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Theme switch as "lights on/off": the new theme grows as a circle from the control
+   that was used (see useLightsSwitch). Only the new snapshot animates; the old one
+   stays put underneath, so there's no cross-fade. */
+.lights-switch::view-transition-new(root) {
+  animation: lights-switch 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes lights-switch {
+  from {
+    clip-path: circle(0 at var(--lights-x, 50%) var(--lights-y, 0));
+  }
+  to {
+    clip-path: circle(var(--lights-r, 150%) at var(--lights-x, 50%) var(--lights-y, 0));
+  }
+}
+
+/* The explore cards morph into the page they open: a short slide with a touch of
+   blur to hide interpolation artefacts. Reduced motion gets no morph at all. */
+::view-transition-group(.morph) {
+  animation-duration: 420ms;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+::view-transition-image-pair(.morph) {
+  animation-name: morph-blur;
+}
+@keyframes morph-blur {
+  30% {
+    filter: blur(3px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* Homepage stack (StackedSections/StackCard). Under reduced motion the cards just
+   flow, keeping their rounded tops and colours. */
+.stack-card {
+  position: relative;
+}
+.stack-sheet {
+  position: relative;
+  overflow: clip;
+  border-top-left-radius: var(--radius-sheet-sm);
+  border-top-right-radius: var(--radius-sheet-sm);
+  box-shadow: var(--stack-shadow);
+}
+@media (min-width: 40rem) {
+  .stack-sheet {
+    border-top-left-radius: var(--radius-sheet);
+    border-top-right-radius: var(--radius-sheet);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .stack-card {
+    position: sticky;
+    /* Short cards stick under the header; a tall one only once its bottom is in
+       view. Without JS (no --card-h) the top is far negative, so nothing sticks. */
+    top: min(4rem, calc(100svh - var(--card-h, 999vh)));
+  }
+}
+/* The scrim dims the card being covered: it hangs above this card's top edge (and
+   2rem into it, behind the sheet, to shade the previous card in the corners). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .stack-card {
+      view-timeline-name: --stack-card;
+    }
+    .stack-card ~ .stack-card::before {
+      content: "";
+      position: absolute;
+      inset-inline: 0;
+      bottom: calc(100% - 2rem);
+      height: 100svh;
+      background: var(--stack-scrim);
+      pointer-events: none;
+      animation: stack-scrim linear both;
+      animation-timeline: --stack-card;
+      animation-range: entry 0% entry 100%;
+    }
+  }
+}
+/* The card underneath stays fully readable until the incoming card is halfway up
+   the screen, then darkens as it finishes covering it. */
+@keyframes stack-scrim {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* "Everything you need to play": the one heading that opens up as it scrolls in,
+   using Archivo's width axis. Each breakpoint's range keeps the line count fixed
+   (measured), so the stretch never re-wraps the text. Without scroll-driven
+   animations, or with reduced motion, it's the normal static heading. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .heading-stretch {
+      --stretch-from: 100%;
+      --stretch-to: 125%;
+      animation: heading-stretch linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+    @media (min-width: 640px) {
+      .heading-stretch {
+        --stretch-from: 85%;
+        --stretch-to: 112%;
+      }
+    }
+    @media (min-width: 1024px) {
+      .heading-stretch {
+        --stretch-from: 80%;
+        --stretch-to: 125%;
+      }
+    }
+  }
+}
+
+@keyframes heading-stretch {
+  from {
+    font-stretch: var(--stretch-from);
+  }
+  to {
+    font-stretch: var(--stretch-to);
+  }
+}

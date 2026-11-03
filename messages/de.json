@@ -1,0 +1,529 @@
+{
+  "Home": {
+    "title": "Play. Connect. Repeat.",
+    "titleRich": "Play. Connect. <accent>Repeat.</accent>",
+    "subtitle": "Ein neuer Padel-Club in Lindenau — moderne Courts, eine Boutique-Lounge und ein Ort zum Spielen nach Feierabend.",
+    "openingBadge": "Eröffnung November 2026",
+    "ctaSecondary": "Club entdecken",
+    "scrollHint": "Oder scrolle und sieh zu, wie der Club entsteht",
+    "playStory": "Story abspielen",
+    "story": {
+      "eyebrow": "So entsteht Volea Padel",
+      "navLabel": "Kapitel der Story",
+      "frames": {
+        "hall": {
+          "short": "Halle",
+          "label": "Leere Halle",
+          "text": "Dunkelheit. Die 21 Punkte des Logos schweben dort, wo die Courts entstehen."
+        },
+        "lights": {
+          "short": "Licht",
+          "label": "Licht an",
+          "text": "Die Punkte steigen auf, werden weiß und zu den Deckenleuchten der Halle."
+        },
+        "glass": {
+          "short": "Glas",
+          "label": "Stahl & Glas",
+          "text": "Pfosten wachsen, Panoramaglas fährt hoch, der Kunstrasen rollt aus und die Linien zeichnen sich."
+        },
+        "rebound": {
+          "short": "Abpraller",
+          "label": "Die Wand spielt mit",
+          "text": "Der Ball wird aufgeschlagen, springt auf und kommt von der Scheibe zurück – der Moment, der Padel ausmacht."
+        }
+      },
+      "next": "Weiter: {chapter}",
+      "continue": "Weiter"
+    },
+    "facts": {
+      "courts": {
+        "value": "5",
+        "label": "Indoor-Courts",
+        "text": "3 Doppel- und 2 Einzelcourts, Panoramaglas."
+      },
+      "opening": {
+        "value": "11.26",
+        "label": "Eröffnung",
+        "text": "November 2026."
+      },
+      "lounge": {
+        "value": "Lounge",
+        "label": "& Bistro",
+        "text": "Der Treffpunkt nach dem Match."
+      },
+      "location": {
+        "value": "Lindenau",
+        "label": "Standort",
+        "text": "Nur wenige Minuten von der Innenstadt entfernt."
+      }
+    },
+    "renovation": {
+      "heading": "Von der leeren Halle zum Padel-Club",
+      "text": "Eine Zeichnung der geplanten Halle in Lindenau: drei Doppel- und zwei Einzel-Courts unter einem Dach.",
+      "eyebrow": "Die Halle",
+      "block": {
+        "project": "Projekt",
+        "subject": "Motiv",
+        "subjectValue": "Die Halle, geplant",
+        "source": "Zeichnung",
+        "sourceValue": "Nicht maßstabsgetreu",
+        "status": "Status",
+        "statusValue": "Geplant"
+      },
+      "notes": {
+        "label": "Geplant",
+        "courts": "3 Doppel- + 2 Einzelplätze",
+        "lounge": "Lounge & Bistro",
+        "opening": "Eröffnung November 2026"
+      }
+    },
+    "teasers": {
+      "heading": "Alles, was du zum Spielen brauchst",
+      "courtsTitle": "Courts & Preise",
+      "courtsText": "Entdecke unsere Plätze und buche deine Zeit.",
+      "trainingTitle": "Training",
+      "trainingText": "Vom Schnupperkurs bis zum regelmäßigen Coaching.",
+      "eventsTitle": "Events",
+      "eventsText": "Turniere, Americano-Abende und mehr.",
+      "loungeTitle": "Lounge",
+      "loungeText": "Kaffee, Drinks und ein Ort zum Entspannen.",
+      "sponsoringTitle": "Partner",
+      "sponsoringText": "Firmenevents und Sponsoring-Möglichkeiten.",
+      "vouchersTitle": "Gutscheine",
+      "vouchersText": "Verschenke Padel."
+    },
+    "partners": {
+      "heading": "Firmenfitness-Partner",
+      "text": "Volea Padel plant Partnerschaften mit Firmenfitness-Programmen."
+    },
+    "b2b": {
+      "heading": "Padel für dein Team",
+      "text": "Veranstalte ein Firmenevent, einen Teamausflug oder ein Turnier bei Volea Padel.",
+      "cta": "Jetzt anfragen"
+    },
+    "location": {
+      "heading": "So findest du uns",
+      "text": "Musterstraße 12, 12345 Lindenau — nahe der Innenstadt.",
+      "cta": "In Google Maps öffnen"
+    },
+    "racket": {
+      "eyebrow": "Dein Schläger",
+      "heading": "Nimm den Schläger.",
+      "text": "Padelschläger haben keine Saiten: Die Schlagfläche ist massiv und gelocht. Dieser hier ist in Code modelliert – seine Löcher bilden die 21 Punkte des Volea-Logos. Zieh, um ihn zu drehen – und dann ab auf den Court.",
+      "cta": "Ab auf den Court",
+      "canvasLabel": "Ein 3D-Padelschläger mit Carbon-Schlagfläche, deren Löcher das Punktraster des Volea-Logos bilden; er dreht sich langsam, während ein Ball von ihm abprallt.",
+      "dragHint": "Zum Drehen ziehen",
+      "staticHint": "Padelschläger",
+      "turnLeft": "Schläger nach links drehen",
+      "turnRight": "Schläger nach rechts drehen"
+    },
+    "rally": {
+      "eyebrow": "Du bist dran",
+      "heading": "Spür das Glas.",
+      "text": "Padel lebt vom Glas: Nach einem Aufsprung darf der Ball von der Wand zurückkommen und bleibt im Spiel. Schau zu, übe ohne Punkte – oder spiel ein kurzes Match gegen den Computer.",
+      "note": "Echte Court-Maße und Padel-Regeln; Aufsprung nach FIP-Ballnorm, Wände angenähert. In leichter Zeitlupe, Ball und Schläger größer dargestellt.",
+      "canvasLabel": "Padel-Court von der Seite: Zwei Zweierteams spielen sich den Ball über das Netz zu, der Ball prallt von den Glasrückwänden ab.",
+      "controls": "Tastatur: ← → laufen, Leertaste schlägt auf und springt, Escape beendet. Handy: ziehen zum Laufen, tippen für Aufschlag oder Sprung. Solange eine Karte offen ist, pausiert das Spiel.",
+      "controlsTouch": "Training und Match öffnen im Vollbild, mit Tasten zum Laufen, Aufschlagen und Springen. Solange eine Karte offen ist, pausiert das Spiel.",
+      "fullscreen": {
+        "exit": "Spiel beenden",
+        "rotate": "Dreh dein Handy quer",
+        "rotateText": "Der Court ist breit, darum wird im Querformat gespielt. Bis dahin ist das Spiel pausiert.",
+        "left": "Nach links laufen",
+        "right": "Nach rechts laufen",
+        "action": "Aufschlag / Sprung"
+      },
+      "stop": "Zurück zur Demo",
+      "pause": "Animation pausieren",
+      "play": "Animation abspielen",
+      "rallyLabel": "Ballwechsel",
+      "bestLabel": "Rekord",
+      "yourPoint": "Punkt für euch",
+      "theirPoint": "Punkt für die Gegner",
+      "calls": {
+        "bounce": "Aufsprung",
+        "offTheGlass": "Von der Scheibe – Ball bleibt im Spiel",
+        "volley": "Volley"
+      },
+      "reasons": {
+        "net": "Ins Netz",
+        "wallFirst": "Glas vor dem Aufsprung – Fehler",
+        "doubleBounce": "Zweiter Aufsprung",
+        "out": "Aus",
+        "porTres": "Por tres! Über die Wand"
+      },
+      "you": "Du",
+      "them": "Gegner",
+      "scoreLabel": "Spielstand: du {you}, Gegner {them}",
+      "firstTo": "Wer zuerst {points} Punkte hat, gewinnt.",
+      "result": {
+        "final": "Endstand {you}–{them}",
+        "won": "Du hast gewonnen!",
+        "lost": "Diesmal hat der Gegner gewonnen.",
+        "longest": "Längster Ballwechsel",
+        "porTres": "Por-tres-Gewinner",
+        "cta": "Bereit für das echte Spiel?",
+        "book": "Court buchen",
+        "again": "Nochmal spielen"
+      },
+      "practice": "Üben",
+      "playMatch": "Match spielen",
+      "goodShots": "Gute Schläge",
+      "tutorial": {
+        "step": "Schritt {n}/3",
+        "space": "Leertaste",
+        "run": "laufen (oder auf dem Handy ziehen)",
+        "hit": "Lauf Richtung Netz in den Ball",
+        "free": "Freies Training – ohne Punkte. Lauf in den Ball, spring bei hohen Bällen.",
+        "serve": "zum Aufschlag (oder tippen)",
+        "runTouch": "laufen",
+        "serveTouch": "zum Aufschlag"
+      },
+      "practiceDone": {
+        "title": "Stark – du hast es raus!",
+        "text": "{shots} gute Schläge. Übe weiter oder spiel ein Match: Wer zuerst {points} Punkte hat, gewinnt.",
+        "more": "Weiter üben"
+      }
+    },
+    "parts": {
+      "navLabel": "Seitenabschnitte",
+      "story": "Story",
+      "racket": "Schläger",
+      "rally": "Du bist dran",
+      "facts": "Fakten",
+      "hall": "Die Halle",
+      "explore": "Entdecken"
+    }
+  },
+  "Courts": {
+    "title": "Courts & Preise",
+    "subtitle": "Drei Doppel-Courts und zwei Einzel-Courts, indoor — buche online über Playtomic.",
+    "courtsHeading": "Unsere Courts",
+    "doublesHeading": "Doppel-Courts",
+    "singlesHeading": "Einzel-Courts",
+    "specialsHeading": "Specials",
+    "addOnsHeading": "Extras",
+    "aiToolNote": "* Aufpreis für Court mit KI-Analyse-Tool.",
+    "pricingError": "Die Preise sind vorübergehend nicht verfügbar — bitte schau später noch einmal vorbei.",
+    "cancellationNote": "Kostenfreie Stornierung bis 24 Stunden vor deiner Buchung. Es gelten zusätzlich die Buchungs- und Stornierungsbedingungen von Playtomic.",
+    "cancellationLink": "Unsere AGB ansehen",
+    "bookCta": "Court buchen",
+    "eyebrow": "3 Doppel · 2 Einzel",
+    "kind": {
+      "doubles": "Doppel",
+      "singles": "Einzel"
+    },
+    "spec": {
+      "eyebrow": "Auf dem Papier",
+      "heading": "Der Court in Maßen",
+      "lead": "Jeder Padel-Court hat denselben Grundriss: Glas an beiden Enden, Gitter in der Mitte der Seiten. Wechsle zwischen Doppel und Einzel, um zu vergleichen.",
+      "toggleLabel": "Court-Typ",
+      "drawingLabel": "Draufsicht eines Padel-Courts, {length} mal {width}, mit Netz, Aufschlaglinien, Glaswänden und Gitter.",
+      "caption": "Reglementmaße",
+      "glass": "Glas",
+      "mesh": "Gitter",
+      "net": "Netz"
+    },
+    "pricing": {
+      "eyebrow": "Pro Court",
+      "heading": "Preise",
+      "perPerson": "pro Person"
+    }
+  },
+  "Book": {
+    "meta": {
+      "title": "Court buchen",
+      "description": "Wähle Court, Tag und Uhrzeit bei Volea Padel Club Lindenau – eine Buchungsvorschau mit Demo-Verfügbarkeit bis zur Eröffnung."
+    },
+    "eyebrow": "Buchungsvorschau",
+    "title": "Court buchen",
+    "subtitle": "Wähle einen Court auf dem Hallenplan, dann den Tag, die Spieldauer und eine Startzeit.",
+    "demoBadge": "Demo-Verfügbarkeit",
+    "demoNotice": "Der Club eröffnet im November 2026. Die freien und belegten Zeiten sind für diese Vorschau generiert – es sind keine echten Buchungen.",
+    "fromRally": "Gutes Match. {court} ist schon für dich aufgewärmt.",
+    "plan": {
+      "label": "Court wählen",
+      "court": "{name}, {count, plural, =0 {keine freien Zeiten} one {# freie Zeit} other {# freie Zeiten}}",
+      "free": "frei",
+      "illustrative": "Illustratives Layout · Demo-Verfügbarkeit",
+      "choose": "Wähle einen Court auf dem Plan, um seine freien Zeiten zu sehen.",
+      "kind": {
+        "doubles": "Doppel",
+        "singles": "Einzel"
+      },
+      "short": {
+        "doubles": "D",
+        "singles": "E"
+      }
+    },
+    "date": {
+      "legend": "Tag",
+      "today": "Heute",
+      "tomorrow": "Morgen"
+    },
+    "duration": {
+      "legend": "Spieldauer",
+      "option": "{minutes} Min."
+    },
+    "time": {
+      "legend": "Startzeit",
+      "morning": "Vormittag",
+      "afternoon": "Nachmittag",
+      "evening": "Abend",
+      "loading": "Freie Zeiten werden geladen …",
+      "error": "Die freien Zeiten konnten nicht geladen werden.",
+      "retry": "Erneut versuchen",
+      "empty": "Auf diesem Court ist an diesem Tag nichts mehr frei. Probier einen anderen Tag oder Court.",
+      "booked": "belegt",
+      "noLongerFree": "Diese Zeit ist nicht mehr frei – bitte wähle eine andere.",
+      "alsoFree": "Um {time} auch frei:",
+      "announce": "{count, plural, =0 {Keine freien Zeiten} one {# freie Zeit} other {# freie Zeiten}} am {date}"
+    },
+    "summary": {
+      "heading": "Deine Auswahl",
+      "court": "Court",
+      "date": "Tag",
+      "time": "Uhrzeit",
+      "duration": "Dauer",
+      "price": "Preis",
+      "priceTbc": "Preis wird noch bestätigt",
+      "pricesLink": "Courts & Preise ansehen",
+      "incomplete": "Wähle Court, Tag und Uhrzeit, um fortzufahren.",
+      "change": "Ändern"
+    },
+    "handoff": {
+      "playtomic": "Weiter zu Playtomic",
+      "playtomicNote": "Du bestätigst diese Zeit auf Playtomic.",
+      "request": "Diese Zeit anfragen",
+      "requestNote": "Schick uns diese Zeit – wir melden uns zur Bestätigung bei dir.",
+      "requestMessage": "Ich möchte {court} am {date} von {start} bis {end} Uhr buchen ({minutes} Min.)."
+    }
+  },
+  "Training": {
+    "title": "Training",
+    "subtitle": "Vom ersten Schnupperkurs bis zum regelmäßigen Coaching — für jedes Niveau.",
+    "programsHeading": "Formate",
+    "coachesHeading": "Trainer",
+    "coachesComingSoon": "Unser Trainerteam wird näher zur Eröffnung bekanntgegeben.",
+    "loadError": "Trainingsinformationen sind vorübergehend nicht verfügbar — bitte schau später noch einmal vorbei.",
+    "cta": "Zum Training anfragen",
+    "eyebrow": "Für jedes Niveau",
+    "path": {
+      "eyebrow": "Dein Weg ins Padel"
+    },
+    "ctaBand": {
+      "heading": "Unsicher, wo du anfangen sollst?",
+      "text": "Erzähl uns kurz von deinem Spiel – wir empfehlen dir das passende Format."
+    }
+  },
+  "Events": {
+    "title": "Events",
+    "subtitle": "Turniere und Community-Formate für jedes Niveau. Anmeldung über Playtomic.",
+    "comingSoon": "Der Eventkalender wird näher zur Eröffnung veröffentlicht.",
+    "loadError": "Events sind vorübergehend nicht verfügbar — bitte schau später noch einmal vorbei.",
+    "corporateHeading": "Firmen- & Teamevents",
+    "corporateText": "Veranstalte ein Teambuilding, Firmenevent oder Padel & Drink Paket bei Volea Padel.",
+    "corporateCta": "Event anfragen",
+    "eyebrow": "Gemeinsam spielen",
+    "timeline": {
+      "eyebrow": "Der Weg zur Eröffnung",
+      "heading": "Vor dem ersten Aufschlag",
+      "now": "Jetzt",
+      "hall": {
+        "when": "Umbau",
+        "title": "Die Halle verwandelt sich",
+        "text": "Aus einer leeren Industriehalle wird ein Padel-Club."
+      },
+      "opening": {
+        "when": "November 2026",
+        "title": "Eröffnung",
+        "text": "Volea Padel Club Lindenau öffnet seine Türen."
+      },
+      "calendar": {
+        "when": "Kurz vor der Eröffnung",
+        "title": "Eventkalender"
+      }
+    },
+    "formats": {
+      "eyebrow": "Formate",
+      "heading": "Von gesellig bis Wettkampf",
+      "social": "Gesellig",
+      "competitive": "Wettkampf"
+    }
+  },
+  "Sponsoring": {
+    "title": "Partner & Sponsoring",
+    "subtitle": "Firmenfitness-Partnerschaften und Markenpräsenz in Lindenaus neuestem Padel-Club.",
+    "adSpaceHeading": "Hier könnte deine Werbung stehen",
+    "adSpaceText": "Werbeflächen auf Bandenwerbung, Bannern und mehr — sichtbar für jeden Spieler und Gast.",
+    "adSpaceCta": "Sponsoring anfragen",
+    "sponsorsHeading": "Unsere Partner",
+    "sponsorsComingSoon": "Unsere Sponsoring-Partner werden näher zur Eröffnung bekanntgegeben.",
+    "loadError": "Sponsoring-Informationen sind vorübergehend nicht verfügbar — bitte schau später noch einmal vorbei.",
+    "fitnessHeading": "Firmenfitness-Partner",
+    "fitnessText": "Volea Padel plant Partnerschaften mit Firmenfitness-Programmen.",
+    "eyebrow": "Partner",
+    "surfaces": {
+      "eyebrow": "Werbeflächen",
+      "heading": "Wo deine Marke sichtbar wird",
+      "label": "Werbeflächen",
+      "boards": {
+        "title": "Court-Banden",
+        "text": "Banden direkt am Court – bei jedem Ballwechsel im Blick."
+      },
+      "banners": {
+        "title": "Banner",
+        "text": "Großformatige Banner in der Halle, sichtbar für alle Spieler und Gäste."
+      },
+      "illustrative": "Nur zur Veranschaulichung – kein Plan der Halle."
+    },
+    "planned": "Geplant",
+    "ctaBandText": "Lass uns darüber sprechen, wie deine Marke Lindenaus Padel-Community erreicht."
+  },
+  "Lounge": {
+    "title": "Lounge & Bistro",
+    "subtitle": "Der Treffpunkt nach dem Match — Kaffee, Drinks und ein Ort zum Entspannen.",
+    "heading": "Play. Connect. Repeat.",
+    "text": "Nach deinem Match wird die Lounge zum Herzstück des Clubs — hol dir einen Kaffee, triff Freunde oder entspann dich einfach vor deinem nächsten Spiel.",
+    "ruleNote": "Speisen und Getränke werden in der Lounge und den dafür vorgesehenen Bereichen genossen — Details findest du in unserer Hausordnung.",
+    "ruleLink": "Hausordnung",
+    "eyebrow": "Nach dem Match",
+    "words": {
+      "play": "Play.",
+      "connect": "Connect.",
+      "repeat": "Repeat."
+    }
+  },
+  "About": {
+    "title": "Über uns",
+    "subtitle": "Von einer leeren Industriehalle zu Lindenaus neuestem Boutique-Padel-Club.",
+    "storyHeading": "Unsere Geschichte",
+    "storyText": "Volea Padel bringt ein modernes Boutique-Hotel-Lobby-Gefühl zum Padel in Lindenau — drei Doppel-Courts und zwei Einzel-Courts, kombiniert mit einer Lounge, die sich wie ein Ort zum Verweilen anfühlt, nicht nur zum Spielen.",
+    "founderNote": "Volea Padel Club ist ein fiktiver Club, erfunden für dieses Beispielprojekt.",
+    "eyebrow": "Volea Padel Club Lindenau"
+  },
+  "Faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was du vor deinem ersten Besuch wissen musst.",
+    "loadError": "FAQs sind vorübergehend nicht verfügbar — bitte schau später noch einmal vorbei.",
+    "eyebrow": "Gut zu wissen",
+    "search": {
+      "label": "FAQs durchsuchen",
+      "placeholder": "z. B. Buchung, Schuhe, Eröffnung",
+      "count": "{count, plural, =0 {Keine passende Frage} one {# passende Frage} other {# passende Fragen}}",
+      "emptyTitle": "Nichts gefunden für „{query}“",
+      "emptyText": "Versuche ein anderes Wort oder frag uns direkt.",
+      "clear": "Suche zurücksetzen"
+    },
+    "ask": {
+      "heading": "Noch Fragen?",
+      "text": "Schreib uns, wir melden uns bei dir.",
+      "cta": "Kontakt aufnehmen"
+    }
+  },
+  "Vouchers": {
+    "title": "Gutscheine",
+    "subtitle": "Verschenke Padel.",
+    "text": "Unser Gutschein-Shop kommt bald. Melde dich in der Zwischenzeit gerne bei uns — wir arrangieren das gerne für dich.",
+    "cta": "Jetzt anfragen",
+    "eyebrow": "Geschenkidee",
+    "ticket": {
+      "label": "Geschenkgutschein"
+    }
+  },
+  "Contact": {
+    "eyebrow": "Kontakt aufnehmen",
+    "title": "Kontakt",
+    "subtitle": "Fragen zu Courts, Training, Events oder Sponsoring? Wir freuen uns auf deine Nachricht.",
+    "addressHeading": "Besuch uns",
+    "mapCta": "In Google Maps öffnen",
+    "typeLabel": "Womit können wir helfen?",
+    "chooserHeading": "Worum geht es?",
+    "type": {
+      "general": "Allgemeines Anliegen",
+      "booking": "Court-Buchungsanfrage",
+      "corporate": "Firmenevent / Teamevent",
+      "sponsorship": "Sponsoring & Partnerschaft",
+      "training": "Training / Coaching"
+    },
+    "nameLabel": "Name",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon (optional)",
+    "companyLabel": "Unternehmen",
+    "peopleCountLabel": "Anzahl Personen",
+    "preferredDateLabel": "Wunschtermin",
+    "levelLabel": "Spielstärke",
+    "levelPlaceholder": "Spielstärke auswählen",
+    "levelBeginner": "Anfänger",
+    "levelIntermediate": "Fortgeschritten",
+    "levelAdvanced": "Erfahren",
+    "messageLabel": "Nachricht",
+    "consentText": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+    "consentLink": "Datenschutzerklärung",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Nachricht gesendet",
+    "successText": "Vielen Dank für deine Nachricht — wir melden uns in Kürze bei dir.",
+    "requiredError": "Dieses Feld ist erforderlich.",
+    "emailError": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "consentError": "Bitte stimme der Datenschutzerklärung zu, um fortzufahren.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte überprüfe das Formular und versuche es erneut."
+  },
+  "Nav": {
+    "courts": "Courts & Preise",
+    "offers": "Angebote",
+    "training": "Training",
+    "events": "Events",
+    "vouchers": "Gutscheine",
+    "lounge": "Lounge",
+    "sponsoring": "Partner",
+    "contact": "Kontakt",
+    "bookCourt": "Court buchen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "Footer": {
+    "clubHeading": "Club",
+    "about": "Über uns",
+    "faq": "FAQs",
+    "legalHeading": "Rechtliches",
+    "impressum": "Impressum",
+    "agb": "AGB",
+    "hausordnung": "Hausordnung",
+    "datenschutz": "Datenschutz",
+    "widerruf": "Widerruf & Stornierung",
+    "cookieSettings": "Cookie-Einstellungen",
+    "cookieSettingsPending": "Cookie-Einstellungen (noch nicht nötig — es wird kein Tracking eingesetzt)",
+    "contactHeading": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "sampleNotice": "Beispielprojekt — Volea Padel Club, seine Adresse und seine Personen sind fiktiv."
+  },
+  "Legal": {
+    "englishDisclaimer": "Dieses Dokument ist ausschließlich in deutscher Sprache rechtsverbindlich. Eine englische Übersetzung folgt.",
+    "draftNotice": "Dies ist ein Arbeitsentwurf, der vor dem Go-live einer finalen rechtlichen Prüfung bedarf.",
+    "eyebrow": "Rechtliches"
+  },
+  "Language": {
+    "label": "Sprache"
+  },
+  "Theme": {
+    "label": "Design",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "NotFound": {
+    "eyebrow": "404 · Seite nicht gefunden",
+    "title": "Im Aus",
+    "description": "Dieser Ball ist weit über die Linie geflogen — die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "cta": "Zurück zur Startseite",
+    "linksHeading": "Vielleicht suchst du"
+  },
+  "ErrorPage": {
+    "eyebrow": "Let · Punkt wiederholen",
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Dieser Schlag hat wohl nicht gesessen. Bitte versuche es erneut.",
+    "retry": "Erneut versuchen",
+    "cta": "Zurück zur Startseite"
+  }
+}

@@ -1,0 +1,7 @@
+allowBuilds:
+  # Both are official Next.js dependencies (its compiler and dev-server file
+  # watcher); their install scripts just fetch prebuilt native binaries.
+  '@parcel/watcher': true
+  '@swc/core': true
+  sharp: false
+  unrs-resolver: false
